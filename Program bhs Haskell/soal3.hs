@@ -3,9 +3,10 @@ checkEvenOdd n  | even n        = "Genap "
                 | odd n         = "Ganjil "
 
 checkPosNeg :: Int -> String
-checkPosNeg n   | n > 0         = "Positif"
-                | n < 0         = "Negatif"
-                | n == 0        = "Nol"
+checkPosNeg n = 
+    if  n > 0 then "Positif"
+    else if n < 0 then "Negatif"
+    else "Nol"
 
 checkEvenOddPosNeg :: Int -> IO()
 checkEvenOddPosNeg n = putStrLn ((checkEvenOdd n) ++ (checkPosNeg n))
