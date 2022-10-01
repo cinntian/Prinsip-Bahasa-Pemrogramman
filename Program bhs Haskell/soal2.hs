@@ -1,4 +1,5 @@
 gcde :: Int -> Int -> Int
-gcde x y    | (x == y)  = x
-            | (x > y)   = gcde (x - y) y
-            | (y > x)   = gcde y x
+gcde x y =
+    if  (x == y)  then  x
+    else if (x > y)  then gcde (x - y) y
+    else  gcde y x
