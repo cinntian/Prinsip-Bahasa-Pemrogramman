@@ -9,4 +9,4 @@ checkPosNeg n =
     else "Nol"
 
 checkEvenOddPosNeg :: Int -> IO()
-checkEvenOddPosNeg n = putStrLn ((checkEvenOdd n) ++ (checkPosNeg n))
+checkEvenOddPosNeg n = putStrLn ((checkEvenOdd n) ++ (checkPosNeg n)) 
